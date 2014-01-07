@@ -39,10 +39,10 @@ hi ColorColumn ctermfg=White ctermbg=DarkGray
 hi Pmenu ctermfg=White ctermbg=Black
 hi PmenuSel ctermfg=White ctermbg=DarkGray
 
+"" Show trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+au InsertLeave * match ExtraWhitespace /\s\+$/
 
-"" Remove trailing whitespace
-"autocmd BufWritePre * :%s/\s\+$//e
-"
 " NERDTree Configuration
 noremap <C-f> :NERDTreeFind<CR>
 "
