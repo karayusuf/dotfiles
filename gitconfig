@@ -24,3 +24,6 @@
 
 [grep]
   lineNumber = true
+
+[push]
+	default = nothing
