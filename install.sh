@@ -22,4 +22,6 @@ ln -s "${DIR}/irbrc" ~/.pryrc
 ln -s "${DIR}/vim/vimrc" ~/.vimrc
 ln -s "${DIR}/vim" ~/.vim
 
+mkdir ~/.swp
+
 vim -c "BundleInstall"

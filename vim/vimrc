@@ -24,6 +24,8 @@ set expandtab "Convert tabs into spaces
 set tabstop=2 "Tabs use 2 spaces
 set shiftwidth=2
 
+set dir=~/.swp
+
 "" Disable operating system error beeps
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
@@ -58,6 +60,9 @@ noremap ;rc :Rcontroller<Space>
 noremap ;rh :Rhelper<Space>
 
 noremap ;sp :!zeus test %:p<CR>
+noremap ;fw :!git grep '<cword>'<CR>
+noremap ;fd :!git grep 'def <cword>'<CR>
+noremap ;fu :!git grep '\.<cword>'<CR>
 
 "noremap ;sp :!spec --color --format=nested %:p<CR>
 "noremap ;cu :!cucumber --format pretty --require features %:p<CR>
