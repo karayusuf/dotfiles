@@ -109,3 +109,6 @@ function git_prompt {
 
 export PS1="${CYAN}\W${BLACK_BOLD}\$(git_prompt)${CYAN}$ ${RESET}"
 export PS2="${WHITE_BOLD}> ${RESET}"
+
+export GOPATH="$HOME/checkouts/go"
+export PATH="$PATH:$GOPATH"
