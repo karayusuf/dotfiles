@@ -8,6 +8,8 @@ call vundle#rc()
 Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'godlygeek/tabular.git'
+Bundle 'elixir-lang/vim-elixir.git'
+Bundle 'fatih/vim-go.git'
 
 colorscheme twilight256
 syntax on "Syntax highlighting
