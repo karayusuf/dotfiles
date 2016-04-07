@@ -8,6 +8,8 @@ call vundle#rc()
 Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree.git'
 Bundle 'godlygeek/tabular.git'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'kylef/apiblueprint.vim'
 
 colorscheme twilight256
 syntax on "Syntax highlighting
@@ -45,6 +47,9 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " NERDTree Configuration
 noremap <C-f> :NERDTreeFind<CR>
+
+noremap ;fj :%!python -m json.tool<CR>
+
 "
 " Rails Vim Hotkeys
 noremap ;a :A<CR>
@@ -81,3 +86,5 @@ inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
 
 noremap ;w :set nowrap<cr>\|<c-w>w\|:vertical resize 80<cr>\|:set wrap<cr>
+
+autocmd BufWritePre *.yml :%s/\s\+$//e

@@ -6,15 +6,17 @@
   bra = branch -a
   dc = diff --cached
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  snow = show --name-only
   type = cat-file -t
   dump = cat-file -p
+  pr = "!f() { git fetch upstream pull/$1/head:pr-$1 && git checkout pr-$1; }; f"
 
 [core]
   editor = vim
 
 [user]
   name = Joe Karayusuf
-  email = jkarayusuf@gmail.com
+  email = jkarayusuf@newrelic.com
 
 [color]
   status = auto
