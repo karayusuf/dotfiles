@@ -83,6 +83,7 @@ function git_prompt {
   echo "(${BRANCH}${STATUS})"
 }
 
+setopt PROMPT_SUBST
 PROMPT="%F{cyan}%~%F{white}$(git_prompt)%F{cyan}$%F{white} "
 
 # ===================================================================
