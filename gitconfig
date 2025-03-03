@@ -16,7 +16,7 @@
 
 [user]
   name = Joe Karayusuf
-  email = jkarayusuf@newrelic.com
+  email = jkarayusuf@gmail.com
 
 [color]
   status = auto
@@ -28,4 +28,7 @@
   lineNumber = true
 
 [push]
-	default = nothing
+  default = nothing
+
+[url "ssh://git@github.com/"]
+  insteadOf = https://github.com/
